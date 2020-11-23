@@ -19,6 +19,7 @@ public class Sensor {
     public String toString() {
         return "Sensor{" +
                 "type=' " + type + '\'' +
+                ", Sensor ID= " + id +
                 ", buildingID= " + buildingID +
                 ", currentSensorValue= " + currentSensorValue +
                 '}';

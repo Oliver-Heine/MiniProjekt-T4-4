@@ -1,6 +1,6 @@
 package com.company;
 
-public class Actuator {
+public class  Actuator {
     private String actuatorType;
     private int actuatorID;
     private int sensorIDCoupling;
@@ -20,13 +20,12 @@ public class Actuator {
 
     @Override
     public String toString() {
-        return "Actuator{" +
-                "actuatorType= '" + actuatorType + '\'' +
-                ", actuatorID= " + actuatorID +
-                ", sensorIDCoupling= " + sensorIDCoupling +
-                ", buildID= " + buildID +
-                ", currentActuatorValue= " + currentActuatorValue +
-                '}';
+        return "The name of the actuator is " + actuatorType +
+                ". The actuator ID is " + actuatorID +
+                ". The ID of the sensor coupling is " + sensorIDCoupling +
+                ". The building the actuator belongs to " + buildID +
+                ". The current actuator value is " + currentActuatorValue
+                ;
     }
 
     public String getActuatorInfo(){

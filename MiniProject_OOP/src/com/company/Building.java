@@ -15,10 +15,12 @@ public class Building {
 
     @Override
     public String toString() {
-        return "Building{" +
-                "name='" + name + '\'' +
+        return "The name of the building is " + name +
+                " and the ID is " + buildingID +
                 '}';
     }
+
+
 
     public String getBuildingInfo(){
         return toString();
