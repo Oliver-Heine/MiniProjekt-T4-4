@@ -18,6 +18,21 @@ public class Actuator {
         return actuatorType;
     }
 
+    @Override
+    public String toString() {
+        return "Actuator{" +
+                "actuatorType= '" + actuatorType + '\'' +
+                ", actuatorID= " + actuatorID +
+                ", sensorIDCoupling= " + sensorIDCoupling +
+                ", buildID= " + buildID +
+                ", currentActuatorValue= " + currentActuatorValue +
+                '}';
+    }
+
+    public String getActuatorInfo(){
+        return toString();
+    }
+
     public int getActuatorID() {
         return actuatorID;
     }

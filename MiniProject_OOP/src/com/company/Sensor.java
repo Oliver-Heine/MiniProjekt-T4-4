@@ -8,11 +8,24 @@ public class Sensor {
     private double currentSensorValue;
 
 
-    public Sensor(String type, int id, double currentSensorValue) {
+    public Sensor(String type, int id) {
         this.type = type;
         this.id = id;
         this.buildingID = Building.getBuildingID();
         this.currentSensorValue = currentSensorValue;
+    }
+
+    @Override
+    public String toString() {
+        return "Sensor{" +
+                "type=' " + type + '\'' +
+                ", buildingID= " + buildingID +
+                ", currentSensorValue= " + currentSensorValue +
+                '}';
+    }
+
+    public String getSensorInfo(){
+        return toString();
     }
 
     public String getType() {
