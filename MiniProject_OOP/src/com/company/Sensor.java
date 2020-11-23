@@ -2,8 +2,8 @@ package com.company;
 
 public class Sensor {
     //
-     private String type;
-    private int id;
+    private String type;
+    private static int id;
     private int buildingID;
     private double currentSensorValue;
 
@@ -19,7 +19,7 @@ public class Sensor {
         return type;
     }
 
-    public int getId() {
+    public static int getId() {
         return id;
     }
 

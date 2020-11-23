@@ -5,6 +5,12 @@ public class Building {
     private String name;
     private static int buildingID;
 
+
+    public Building(String name, int buildingID) {
+        this.name = name;
+        this.buildingID = buildingID;
+    }
+
     public String getName() {
         return name;
     }
